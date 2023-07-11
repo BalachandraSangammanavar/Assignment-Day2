@@ -1,0 +1,74 @@
+(1) Write a blog on the difference between document and window objects.
+
+Difference between document and window objects
+
+    Document Object
+
+The document object represents a web page that is loaded in the browser. By accessing the document object, we can access the element in the HTML page. With the help of document objects, we can add dynamic content to our web page. The document object can be accessed with a window.document or just document.
+
+Syntax:
+Document.property_name;
+
+    Window Object
+
+The window object is the topmost object of the DOM hierarchy. It represents a browser window or frames that display the contents of the webpage. Whenever a window appears on the screen to display the contents of the document, the window object is created. The window object can be accessed with a window.property_name.
+
+Syntax:
+Window.property_name;
+
+Window Vs Document
+
+Window object : 
+--> It is the top most object and outermost element of the object hierarchy as shown in Hierarchy of Window and Document object using BOM and DOM.
+
+--> The window object represents a window/tab containing a DOM document.
+
+Document object :
+--> Each HTML document that gets loaded into a window becomes a document object. The document contains the contents of the page. Using document object, JavaScript can modify, add and delete the HTML elements, attributes CSS styles in the page.
+
+--> Document object is property of window object that points to the DOM document loaded in that window.
+ 
+The other major difference is that both window object and document object have properties and methods. Few method names are the same in both objects but with different behavior. In the below figure (example) window.open() opens a new tab or window and document.open() creates a blank document within the window.
+
+        Refer to the Example figure
+
+Difference between document and window objects
+
+
+|                Document                |               Window              |
+|It represents any HTML document or web  |It represents a browser window or  |
+|page that is loaded in the browser.     |frames that display the contents of|
+|                                        |the webpage.                       |
+|                                        |                                   | 
+|It is loaded inside the window.         |It is the very first object that   |
+|                                        |is loaded in the browser.          |
+|                                        |                                   |             
+|It is the object of window property.    |It is the object of the browser.   |
+|                                        |                                   |
+|All the tags, elements with attributes  |Global objects, functions, and     |
+|in HTML are part of the document.       |variables of JavaScript are members| 
+|                                        |of the window object.              |
+|                                        |                                   |
+|We can access the document from a       |We can access the window from the  | 
+|window using the window. document       |window only. i.e. window.window    |
+|                                        |                                   |
+|The document is part of BOM (browser    |The window is part of BOM, not DOM.|
+|object model) and dom (Document object  |                                   |
+|model)                                  |                                   |
+|                                        |                                   |
+|Properties of document objects such as  |Properties of the window object    |
+|title, body, cookies, etc can also be   |cannot be accessed by the document | 
+|accessed by a window like this          |object.                            |
+|window. document.title                  |                                   |
+|                                        |                                   |
+|Syntax:                                 |Syntax:                            |
+|     document.property_name;            |      window.property_name;        |
+|                                        |                                   |
+|Example:                                |Example:                           |
+|     document.title :  will return the  |      window.innerHeight : will    |
+|     title of the document              |      return the height of the     |
+|                                        |      content area of the browser  |
+
+
+
+
